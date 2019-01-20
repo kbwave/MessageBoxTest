@@ -7,3 +7,6 @@ c:\users\林 知宏\documents\visual studio 2013\Projects\MessageBoxTest\Message
 c:\users\林 知宏\documents\visual studio 2013\Projects\MessageBoxTest\MessageBoxTest\obj\x64\Debug\MessageBoxTest.exe
 c:\users\林 知宏\documents\visual studio 2013\Projects\MessageBoxTest\MessageBoxTest\obj\x64\Debug\MessageBoxTest.xml
 c:\users\林 知宏\documents\visual studio 2013\Projects\MessageBoxTest\MessageBoxTest\obj\x64\Debug\MessageBoxTest.pdb
+C:\Users\林 知宏\Documents\Visual Studio 2013\Projects\MessageBoxTest\MessageBoxTest\bin\x64\Debug\kbwaveRegistryLogic.dll
+C:\Users\林 知宏\Documents\Visual Studio 2013\Projects\MessageBoxTest\MessageBoxTest\obj\x64\Debug\MessageBoxTest.vbprojResolveAssemblyReference.cache
+C:\Users\林 知宏\Documents\Visual Studio 2013\Projects\MessageBoxTest\MessageBoxTest\obj\x64\Debug\MessageBoxTest.windowMain.resources
