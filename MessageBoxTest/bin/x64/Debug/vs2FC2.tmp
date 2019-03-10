@@ -65,89 +65,20 @@ MessageBoxTest
  メッセージボックスの種類を管理
  </summary>
 	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.windowMain_Load(System.Object,System.EventArgs)">
-	<summary>
-	</summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.btnShow_Click(System.Object,System.EventArgs)">
-	<summary>
-	</summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.comboBox_SelectedIndexChanged(System.Object,System.EventArgs)">
-	<summary>
-	</summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
 </member><member name="M:MessageBoxTest.windowMain.Preparation">
 	<summary>
  前準備
  </summary>
 	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.SetMsgBoxTypeCombo">
+</member><member name="M:MessageBoxTest.windowMain.SetMsgBoxCombo">
 	<summary>
- 種類コンボボックスにメッセージボックスを入れ込む
- </summary>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.SetIconCombo">
-	<summary>
- アイコンコンボボックスをセット
+ コンボボックスにメッセージボックスを入れ込む
  </summary>
 	<remarks></remarks>
 </member><member name="M:MessageBoxTest.windowMain.InitWindow">
 	<summary>
  ウィンドウを初期化
  </summary>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.GetSelectedMsgBox">
-	<summary>
- 現在選択されているメッセージボックスを取得
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.SetDataFromWindow(MessageBoxTest.clsMessageBoxButtonInfo@)">
-	<summary>
- 画面の情報をデータに反映
- </summary>
-	<param name="MsgBoxInfo"></param>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.GetIconNumber">
-	<summary>
- 選択されているアイコン番号を取得
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.GetDefaultButton">
-	<summary>
- デフォルトボタンを取得
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.UpdateCtrlStateBasedMsgBoxType">
-	<summary>
- 選択されたコンボボックスの種類によってコントロールの状態を更新
- </summary>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.UpdateIconPicBasedCbxIcon">
-	<summary>
- アイコンコンボで選択しているアイコンをピクチャに反映
- </summary>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.UpdateRbtDefBtnVisible(System.Int32)">
-	<summary>
- 指定した数値によってデフォルトボタンの表示を更新
- </summary>
-	<param name="ButtonNum"></param>
-	<remarks></remarks>
-</member><member name="M:MessageBoxTest.windowMain.SetRbtDefault(System.Windows.Forms.MessageBoxDefaultButton)">
-	<summary>
- 指定したデフォルトボタンに値するラジオボタンに反映
- </summary>
-	<param name="MsgBoxDefBtn"></param>
 	<remarks></remarks>
 </member><member name="T:MessageBoxTest.windowMain">
 	<summary>

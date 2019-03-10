@@ -25,18 +25,26 @@ Partial Class windowMain
 		Me.gbxDefButton = New System.Windows.Forms.GroupBox()
 		Me.rbtDefButton3 = New System.Windows.Forms.RadioButton()
 		Me.rbtDefButton2 = New System.Windows.Forms.RadioButton()
-		Me.rbtDefButtonOne = New System.Windows.Forms.RadioButton()
+		Me.rbtDefButton1 = New System.Windows.Forms.RadioButton()
 		Me.lblType = New System.Windows.Forms.Label()
 		Me.cbxType = New System.Windows.Forms.ComboBox()
 		Me.gbxBody = New System.Windows.Forms.GroupBox()
+		Me.btnCopyBodyToCB = New System.Windows.Forms.Button()
+		Me.btnBodyClear = New System.Windows.Forms.Button()
 		Me.txtBody = New System.Windows.Forms.TextBox()
 		Me.btnShow = New System.Windows.Forms.Button()
 		Me.gbxStyle = New System.Windows.Forms.GroupBox()
+		Me.rbtNewStyle = New System.Windows.Forms.RadioButton()
 		Me.rbtOldStyle = New System.Windows.Forms.RadioButton()
-		Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+		Me.lblTitle = New System.Windows.Forms.Label()
+		Me.txtTitle = New System.Windows.Forms.TextBox()
+		Me.lblIcon = New System.Windows.Forms.Label()
+		Me.cbxIcon = New System.Windows.Forms.ComboBox()
+		Me.picIcon = New System.Windows.Forms.PictureBox()
 		Me.gbxDefButton.SuspendLayout()
 		Me.gbxBody.SuspendLayout()
 		Me.gbxStyle.SuspendLayout()
+		CType(Me.picIcon, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'gbxDefButton
@@ -45,7 +53,7 @@ Partial Class windowMain
 			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
 		Me.gbxDefButton.Controls.Add(Me.rbtDefButton3)
 		Me.gbxDefButton.Controls.Add(Me.rbtDefButton2)
-		Me.gbxDefButton.Controls.Add(Me.rbtDefButtonOne)
+		Me.gbxDefButton.Controls.Add(Me.rbtDefButton1)
 		Me.gbxDefButton.Location = New System.Drawing.Point(1, 46)
 		Me.gbxDefButton.Name = "gbxDefButton"
 		Me.gbxDefButton.Size = New System.Drawing.Size(442, 60)
@@ -75,62 +83,88 @@ Partial Class windowMain
 		Me.rbtDefButton2.Text = "ボタン2"
 		Me.rbtDefButton2.UseVisualStyleBackColor = True
 		'
-		'rbtDefButtonOne
+		'rbtDefButton1
 		'
-		Me.rbtDefButtonOne.AutoSize = True
-		Me.rbtDefButtonOne.Location = New System.Drawing.Point(12, 26)
-		Me.rbtDefButtonOne.Name = "rbtDefButtonOne"
-		Me.rbtDefButtonOne.Size = New System.Drawing.Size(74, 24)
-		Me.rbtDefButtonOne.TabIndex = 0
-		Me.rbtDefButtonOne.TabStop = True
-		Me.rbtDefButtonOne.Text = "ボタン1"
-		Me.rbtDefButtonOne.UseVisualStyleBackColor = True
+		Me.rbtDefButton1.AutoSize = True
+		Me.rbtDefButton1.Location = New System.Drawing.Point(12, 26)
+		Me.rbtDefButton1.Name = "rbtDefButton1"
+		Me.rbtDefButton1.Size = New System.Drawing.Size(74, 24)
+		Me.rbtDefButton1.TabIndex = 0
+		Me.rbtDefButton1.TabStop = True
+		Me.rbtDefButton1.Text = "ボタン1"
+		Me.rbtDefButton1.UseVisualStyleBackColor = True
 		'
 		'lblType
 		'
 		Me.lblType.AutoSize = True
-		Me.lblType.Location = New System.Drawing.Point(9, 15)
+		Me.lblType.Location = New System.Drawing.Point(5, 15)
 		Me.lblType.Margin = New System.Windows.Forms.Padding(0, 0, 3, 0)
 		Me.lblType.Name = "lblType"
-		Me.lblType.Size = New System.Drawing.Size(165, 20)
+		Me.lblType.Size = New System.Drawing.Size(35, 20)
 		Me.lblType.TabIndex = 1
-		Me.lblType.Text = "メッセージボックスの種類"
+		Me.lblType.Text = "種類"
 		'
 		'cbxType
 		'
 		Me.cbxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 		Me.cbxType.FormattingEnabled = True
-		Me.cbxType.Location = New System.Drawing.Point(180, 12)
+		Me.cbxType.Location = New System.Drawing.Point(46, 12)
 		Me.cbxType.Name = "cbxType"
-		Me.cbxType.Size = New System.Drawing.Size(179, 28)
+		Me.cbxType.Size = New System.Drawing.Size(195, 28)
 		Me.cbxType.TabIndex = 2
 		'
 		'gbxBody
 		'
+		Me.gbxBody.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+			Or System.Windows.Forms.AnchorStyles.Left) _
+			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.gbxBody.Controls.Add(Me.btnCopyBodyToCB)
+		Me.gbxBody.Controls.Add(Me.btnBodyClear)
 		Me.gbxBody.Controls.Add(Me.txtBody)
-		Me.gbxBody.Location = New System.Drawing.Point(1, 112)
+		Me.gbxBody.Location = New System.Drawing.Point(1, 145)
 		Me.gbxBody.Name = "gbxBody"
-		Me.gbxBody.Size = New System.Drawing.Size(442, 154)
+		Me.gbxBody.Size = New System.Drawing.Size(442, 230)
 		Me.gbxBody.TabIndex = 3
 		Me.gbxBody.TabStop = False
 		Me.gbxBody.Text = "メッセージ内容"
+		'
+		'btnCopyBodyToCB
+		'
+		Me.btnCopyBodyToCB.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.btnCopyBodyToCB.Location = New System.Drawing.Point(356, 18)
+		Me.btnCopyBodyToCB.Name = "btnCopyBodyToCB"
+		Me.btnCopyBodyToCB.Size = New System.Drawing.Size(75, 23)
+		Me.btnCopyBodyToCB.TabIndex = 2
+		Me.btnCopyBodyToCB.Text = "コピー"
+		Me.btnCopyBodyToCB.UseVisualStyleBackColor = True
+		'
+		'btnBodyClear
+		'
+		Me.btnBodyClear.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.btnBodyClear.Location = New System.Drawing.Point(252, 18)
+		Me.btnBodyClear.Name = "btnBodyClear"
+		Me.btnBodyClear.Size = New System.Drawing.Size(75, 23)
+		Me.btnBodyClear.TabIndex = 1
+		Me.btnBodyClear.Text = "クリア"
+		Me.btnBodyClear.UseVisualStyleBackColor = True
 		'
 		'txtBody
 		'
 		Me.txtBody.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
 			Or System.Windows.Forms.AnchorStyles.Left) _
 			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-		Me.txtBody.Location = New System.Drawing.Point(1, 24)
+		Me.txtBody.Location = New System.Drawing.Point(1, 45)
 		Me.txtBody.Margin = New System.Windows.Forms.Padding(1)
 		Me.txtBody.Multiline = True
 		Me.txtBody.Name = "txtBody"
 		Me.txtBody.ScrollBars = System.Windows.Forms.ScrollBars.Both
-		Me.txtBody.Size = New System.Drawing.Size(438, 126)
+		Me.txtBody.Size = New System.Drawing.Size(438, 181)
 		Me.txtBody.TabIndex = 0
 		'
 		'btnShow
 		'
-		Me.btnShow.Location = New System.Drawing.Point(340, 279)
+		Me.btnShow.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.btnShow.Location = New System.Drawing.Point(340, 389)
 		Me.btnShow.Name = "btnShow"
 		Me.btnShow.Size = New System.Drawing.Size(92, 27)
 		Me.btnShow.TabIndex = 4
@@ -139,15 +173,27 @@ Partial Class windowMain
 		'
 		'gbxStyle
 		'
-		Me.gbxStyle.Controls.Add(Me.RadioButton1)
+		Me.gbxStyle.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.gbxStyle.Controls.Add(Me.rbtNewStyle)
 		Me.gbxStyle.Controls.Add(Me.rbtOldStyle)
-		Me.gbxStyle.Location = New System.Drawing.Point(1, 268)
+		Me.gbxStyle.Location = New System.Drawing.Point(1, 378)
 		Me.gbxStyle.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
 		Me.gbxStyle.Name = "gbxStyle"
 		Me.gbxStyle.Size = New System.Drawing.Size(208, 48)
 		Me.gbxStyle.TabIndex = 5
 		Me.gbxStyle.TabStop = False
 		Me.gbxStyle.Text = "スタイル"
+		'
+		'rbtNewStyle
+		'
+		Me.rbtNewStyle.AutoSize = True
+		Me.rbtNewStyle.Location = New System.Drawing.Point(109, 17)
+		Me.rbtNewStyle.Name = "rbtNewStyle"
+		Me.rbtNewStyle.Size = New System.Drawing.Size(93, 24)
+		Me.rbtNewStyle.TabIndex = 1
+		Me.rbtNewStyle.TabStop = True
+		Me.rbtNewStyle.Text = "新版(.Net)"
+		Me.rbtNewStyle.UseVisualStyleBackColor = True
 		'
 		'rbtOldStyle
 		'
@@ -160,21 +206,64 @@ Partial Class windowMain
 		Me.rbtOldStyle.Text = "旧版(VB6)"
 		Me.rbtOldStyle.UseVisualStyleBackColor = True
 		'
-		'RadioButton1
+		'lblTitle
 		'
-		Me.RadioButton1.AutoSize = True
-		Me.RadioButton1.Location = New System.Drawing.Point(109, 17)
-		Me.RadioButton1.Name = "RadioButton1"
-		Me.RadioButton1.Size = New System.Drawing.Size(93, 24)
-		Me.RadioButton1.TabIndex = 1
-		Me.RadioButton1.TabStop = True
-		Me.RadioButton1.Text = "新版(.Net)"
-		Me.RadioButton1.UseVisualStyleBackColor = True
+		Me.lblTitle.AutoSize = True
+		Me.lblTitle.Location = New System.Drawing.Point(5, 115)
+		Me.lblTitle.Name = "lblTitle"
+		Me.lblTitle.Size = New System.Drawing.Size(61, 20)
+		Me.lblTitle.TabIndex = 6
+		Me.lblTitle.Text = "タイトル"
+		'
+		'txtTitle
+		'
+		Me.txtTitle.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.txtTitle.Location = New System.Drawing.Point(70, 112)
+		Me.txtTitle.Name = "txtTitle"
+		Me.txtTitle.Size = New System.Drawing.Size(362, 27)
+		Me.txtTitle.TabIndex = 7
+		'
+		'lblIcon
+		'
+		Me.lblIcon.AutoSize = True
+		Me.lblIcon.Location = New System.Drawing.Point(244, 15)
+		Me.lblIcon.Margin = New System.Windows.Forms.Padding(0, 0, 3, 0)
+		Me.lblIcon.Name = "lblIcon"
+		Me.lblIcon.Size = New System.Drawing.Size(61, 20)
+		Me.lblIcon.TabIndex = 8
+		Me.lblIcon.Text = "アイコン"
+		'
+		'cbxIcon
+		'
+		Me.cbxIcon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+		Me.cbxIcon.FormattingEnabled = True
+		Me.cbxIcon.Location = New System.Drawing.Point(311, 12)
+		Me.cbxIcon.Name = "cbxIcon"
+		Me.cbxIcon.Size = New System.Drawing.Size(80, 28)
+		Me.cbxIcon.TabIndex = 9
+		'
+		'picIcon
+		'
+		Me.picIcon.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.picIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+		Me.picIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.picIcon.Location = New System.Drawing.Point(400, 8)
+		Me.picIcon.Name = "picIcon"
+		Me.picIcon.Size = New System.Drawing.Size(36, 36)
+		Me.picIcon.TabIndex = 10
+		Me.picIcon.TabStop = False
 		'
 		'windowMain
 		'
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-		Me.ClientSize = New System.Drawing.Size(444, 318)
+		Me.ClientSize = New System.Drawing.Size(444, 428)
+		Me.Controls.Add(Me.picIcon)
+		Me.Controls.Add(Me.cbxIcon)
+		Me.Controls.Add(Me.lblIcon)
+		Me.Controls.Add(Me.txtTitle)
+		Me.Controls.Add(Me.lblTitle)
 		Me.Controls.Add(Me.gbxStyle)
 		Me.Controls.Add(Me.btnShow)
 		Me.Controls.Add(Me.gbxBody)
@@ -193,12 +282,13 @@ Partial Class windowMain
 		Me.gbxBody.PerformLayout()
 		Me.gbxStyle.ResumeLayout(False)
 		Me.gbxStyle.PerformLayout()
+		CType(Me.picIcon, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 
 	End Sub
 	Friend WithEvents gbxDefButton As System.Windows.Forms.GroupBox
-	Friend WithEvents rbtDefButtonOne As System.Windows.Forms.RadioButton
+	Friend WithEvents rbtDefButton1 As System.Windows.Forms.RadioButton
 	Friend WithEvents rbtDefButton3 As System.Windows.Forms.RadioButton
 	Friend WithEvents rbtDefButton2 As System.Windows.Forms.RadioButton
 	Friend WithEvents lblType As System.Windows.Forms.Label
@@ -207,7 +297,14 @@ Partial Class windowMain
 	Friend WithEvents txtBody As System.Windows.Forms.TextBox
 	Friend WithEvents btnShow As System.Windows.Forms.Button
 	Friend WithEvents gbxStyle As System.Windows.Forms.GroupBox
-	Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+	Friend WithEvents rbtNewStyle As System.Windows.Forms.RadioButton
 	Friend WithEvents rbtOldStyle As System.Windows.Forms.RadioButton
+	Friend WithEvents btnBodyClear As System.Windows.Forms.Button
+	Friend WithEvents btnCopyBodyToCB As System.Windows.Forms.Button
+	Friend WithEvents lblTitle As System.Windows.Forms.Label
+	Friend WithEvents txtTitle As System.Windows.Forms.TextBox
+	Friend WithEvents lblIcon As System.Windows.Forms.Label
+	Friend WithEvents cbxIcon As System.Windows.Forms.ComboBox
+	Friend WithEvents picIcon As System.Windows.Forms.PictureBox
 
 End Class

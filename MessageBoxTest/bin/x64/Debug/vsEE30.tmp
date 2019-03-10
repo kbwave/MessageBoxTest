@@ -1,0 +1,101 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MessageBoxTest
+</name>
+</assembly>
+<members>
+<member name="P:MessageBoxTest.clsMessageBoxButtonInfo.EnumIndex">
+	<summary>
+ 定義されたインデックス
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:MessageBoxTest.clsMessageBoxButtonInfo.ButtonsText">
+	<summary>
+ 表示されるボタンのテキスト
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:MessageBoxTest.clsMessageBoxButtonInfo.Buttons">
+	<summary>
+ 表示されるボタンの数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:MessageBoxTest.clsMessageBoxButtonInfo.DefaultButton">
+	<summary>
+ デフォルトで選択状態にするボタン
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MessageBoxTest.clsMessageBoxButtonInfo">
+	<summary>
+ メッセージボックスの種類を管理
+ </summary>
+	<remarks></remarks>
+</member><member name="T:MessageBoxTest.modDefine.PositionNum">
+	<summary>
+ ポジションの定義
+ </summary>
+	<remarks></remarks>
+</member><member name="T:MessageBoxTest.modDefine">
+	<summary>
+ 定義モジュール
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MessageBoxTest.windowMain.Preparation">
+	<summary>
+ 前準備
+ </summary>
+	<remarks></remarks>
+</member><member name="T:MessageBoxTest.windowMain">
+	<summary>
+ メインウィンドウ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MessageBoxTest.modMain.Main">
+	<summary>
+ エントリーポイント
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MessageBoxTest.modMain.GetFormattedStyleList(System.Int32,System.String)">
+	<summary>
+ 書式化されたメッセージボックスの種類の文字列リストを取得
+ </summary>
+	<param name="codePosition">メッセージボックスの数値の位置(-1：種類の前、0：付けない、1：種類の後ろ)</param>
+	<param name="separateString">種類との分割文字列</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MessageBoxTest.modMain.GetStyleList">
+	<summary>
+ メッセージボックスの種類の文字列リストを取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MessageBoxTest.modMain">
+	<summary>
+ 本アプリのメインモジュール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:MessageBoxTest.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:MessageBoxTest.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:MessageBoxTest.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>
